@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:textAlignment="textEnd"
+    tools:context=".MainActivity"
+    android:background="#D0E3CF">
+
+    <RelativeLayout
+        android:layout_width="211dp"
+        android:layout_height="113dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="152dp"
+        android:background="@drawable/s2">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="130dp"
+            android:layout_height="98dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="11dp"
+            android:gravity="center"
+            android:text="Online Store"
+            android:textColor="#092F40"
+            android:textSize="40sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="130dp"
+            android:layout_height="98dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="11dp"
+            android:gravity="center"
+            android:text="Online Store"
+            android:textColor="#E6EBEF"
+            android:textSize="40sp" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="323dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="228dp"
+        android:background="@drawable/s1">
+
+        <EditText
+            android:id="@+id/editTextNick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="37dp"
+            android:drawableEnd="@drawable/person"
+            android:ems="10"
+            android:hint="Kullanıcı Adı:"
+            android:inputType="textPersonName"
+            android:textSize="20sp" />
+
+        <EditText
+            android:id="@+id/editTextEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="84dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:hint="E-mail:"
+            android:textSize="20sp"
+            android:drawableEnd="@drawable/email"/>
+
+        <EditText
+            android:id="@+id/editTextPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="143dp"
+            android:ems="10"
+            android:inputType="textPassword"
+            android:hint="Şifre:"
+            android:textSize="20sp"
+            android:drawableEnd="@drawable/password"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_giris"
+        android:layout_width="161dp"
+        android:layout_height="43dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="443dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="173dp"
+        android:background="@drawable/s3"
+        android:onClick="sqlprog"
+        android:text="Giriş"
+        android:textColor="@color/esra"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn_kayıtol"
+        android:layout_width="159dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="501dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginBottom="108dp"
+        android:background="@drawable/s3"
+        android:onClick="kayıtol"
+        android:text="Kayıt ol"
+        android:textColor="@color/esra"
+        android:textSize="24sp" />
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginEnd="70dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/s4"
+            app:srcCompat="@drawable/instagram" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/s4"
+            app:srcCompat="@drawable/facebook" />
+
+        <ImageView
+            android:id="@+id/imageView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/s4"
+            app:srcCompat="@drawable/twitter" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="238dp"
+        android:layout_height="171dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="13dp"
+        app:srcCompat="@drawable/logo" />
+
+    <RelativeLayout
+        android:layout_width="392dp"
+        android:layout_height="212dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginBottom="654dp">
+
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0E3CF"
+    android:orientation="vertical"
+    tools:context=".PersonF"
+    android:gravity="center">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="106dp"
+        android:src="@drawable/person" />
+
+    <EditText
+        android:id="@+id/txtNameGuncel"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Ad:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtSurnameGuncel"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="Soyad:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtNickGuncel"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Kullanıcı Adını Düzenle:"
+        android:textSize="20sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/txtEmailGuncel"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="E mailini Düzenle:"
+        android:textSize="20sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <EditText
+        android:id="@+id/txtPasswordGuncel"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:text="Şifreni Düzenle:"
+        android:textSize="20sp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:id="@+id/btn_guncelle"
+        android:layout_width="180dp"
+        android:layout_height="67dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/s3"
+        android:onClick="sqlproj"
+        android:text="Düzenle"
+        android:textColor="@color/esra"
+        android:textSize="24sp" />
+
+</LinearLayout>

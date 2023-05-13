@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D0E3CF"
+    android:orientation="vertical"
+    tools:context=".MainActivity3"
+    android:gravity="center">
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Ad:"
+        android:inputType="textPersonName"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Soyad:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtNick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Kullanıcı Adı:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="E-mail:"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:hint="Şifre:"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/btn_kayıtol2"
+        android:layout_width="159dp"
+        android:layout_height="50dp"
+        android:background="@drawable/s3"
+        android:text="Kayıt ol"
+        android:textColor="@color/esra"
+        android:textSize="24sp"
+        android:onClick="kayıt"
+        />
+
+    <Button
+        android:id="@+id/btn_Goster"
+        android:layout_width="159dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/s3"
+        android:onClick="goster"
+        android:text="göster"
+        android:textColor="@color/esra"
+        android:textSize="24sp" />
+</LinearLayout>
